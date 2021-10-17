@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <link href='https://www.blogger.com/static/v1/widgets/1394523530-widget_css_bundle.css' rel='stylesheet' type='text/css' />
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    </meta>
+    <script type='text/javascript'>
+        //<![CDATA[
+        function loadCSS(e, t, n) {
+            "use strict";
+            var i = window.document.createElement("link");
+            var o = t || window.document.getElementsByTagName("script")[0];
+            i.rel = "stylesheet";
+            i.href = e;
+            i.media = "only x";
+            o.parentNode.insertBefore(i, o);
+            setTimeout(function() {
+                i.media = n || "all"
+            })
+        }
+        loadCSS("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
+        loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:300,400,700|Roboto+Slab:400,500,700");
+        loadCSS("//cdn.jsdelivr.net/gh/hung1001/blog@c30405f/smart/lib/font-awesome/css/all.css");
+        loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+        loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
+        loadCSS("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
+        //]]>
+    </script>
+    <script type='text/javascript'>
+        //<![CDATA[
+        function loadCSS(e, t, n) {
+            "use strict";
+            var i = window.document.createElement("link");
+            var o = t || window.document.getElementsByTagName("script")[0];
+            i.rel = "stylesheet";
+            i.href = e;
+            i.media = "only x";
+            o.parentNode.insertBefore(i, o);
+            setTimeout(function() {
+                i.media = n || "all"
+            })
+        }
+
+        //]]>
+    </script>
+    <title>
+        TTD-Profile
+    </title>
+    <!-- Bắt đầu viết Css cho web -->
+    <style id='page-skin-1' type='text/css'>
+        <!-- body {
+            font-family: Roboto, sans-serif;
+            background: url(https://imgur.com/eVa9rJW.png);
+            background-position: 50% 100%;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            color: #443939;
+        }
+        
+        h1 {
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: 100;
+            font-size: 55px;
+            margin-bottom: 0;
+            color: rgb(202, 211, 221);
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: solid 10px transparent;
+            background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, rgba(255, 96, 96, 0.149) 40%, rgba(136, 96, 255, 0.149) 100%);
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            background-size: 100% 100%, 100% 100%;
+            background-position: center center, center bottom;
+            background-repeat: no-repeat;
+            transition: 1s;
+        }
+        
+        .card svg:hover {
+            background-size: 100% 100%, 200% 200%;
+        }
+        
+        .card svg path {
+            fill: #505050;
+        }
+        
+        .card h2 {
+            margin: 0;
+            padding: 1rem;
+        }
+        
+        .card .title {
+            padding: 0.7rem 1rem;
+            font-size: 14px;
+            font-weight: 600;
+            color: #9a9a9a;
+        }
+        
+        .card .desc {
+            padding: 1rem 1rem;
+            order: 2;
+            text-align: center;
+        }
+        
+        .card .actions {
+            display: flex;
+        }
+        
+        .card .actions button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: none;
+            border: none;
+            font-size: 16px;
+            padding: 0.7rem 1rem;
+            color: #707070;
+            font-weight: 800;
+        }
+        
+        .card .actions button i {
+            font-size: 20px;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+        
+        .card .actions button i.fa-heart {
+            color: #ff6060;
+            background: rgba(255, 96, 96, 0.149);
+        }
+        
+        .card .actions button i.fa-star {
+            color: #8860ff;
+            background: rgba(136, 96, 255, 0.149);
+        }
+        
+        button:after {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            font-size: 160px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -webkit-animation: anim 2s;
+            animation: anim 2s;
+            opacity: 0;
+        }
+        
+        .heart:hover i.fas.fa-heart {
+            background: rgba(255, 96, 96, 0.502);
+        }
+        
+        .heart:hover:after {
+            content: '\f004';
+            color: rgba(255, 96, 96, 0.588);
+        }
+        
+        .star:hover i.fas.fa-star {
+            background: rgba(136, 96, 255, 0.502);
+        }
+        
+        .star:hover:after {
+            content: '\f005';
+            color: rgba(136, 96, 255, 0.588);
+        }
+        
+        .fa-instagram {
+            color: #8860ff;
+            position: absolute;
+            top: 3%;
+            right: 2%;
+            font-size: 38px;
+        }
+        
+        .fa-instagram:hover {
+            font-size: 42px;
+            color: #ff6060;
+            transition: all 0.1s linear;
+            cursor: pointer;
+        }
+        
+        @-webkit-keyframes anim {
+            5%,
+            80% {
+                opacity: 1;
+                font-size: 180px;
+            }
+            40%,
+            80% {
+                font-size: 160px;
+            }
+            80%,
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes anim {
+            5%,
+            80% {
+                opacity: 1;
+                font-size: 180px;
+            }
+            40%,
+            80% {
+                font-size: 160px;
+            }
+            80%,
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        html,
+        body {
+            cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+        }
+        
+        a:hover {
+            cursor: url("https://i.imgur.com/IXULuQ1.png"), auto;
+        }
+        
+        -->
+    </style>
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+
+</head>
+
+<body>
+    <h1>Giới thiệu về bản thân</h1>
+    <div class='card'>
+        <img alt='img' onclick='window.open(&#39;https://www.facebook.com/profile.php?id=100014103609313&#39;)' src='image/242017761_1215504352263007_5562473516392288777_n.jpg' />
+        <h2>Trần Tài Đức</h2>
+        <h3>06/07/2000</h3>
+
+
+        Sinh viên năm thứ 4 của trường đại học vinh.
+        <p>Ước mơ sẽ trở thành 1 lập trình viên chuyên nghiệp.
+            <p>Và có niềm đam mê rất lớn với bóng đá
+                <div class='actions'>
+                    <button class='fas heart' onclick='window.open(&#39;https://www.instagram.com/_dtai67/&#39;)'><i class='fas fa-heart'>
+</i>68</button>
+                    <button class='fas star' onclick='window.open(&#39;https://www.facebook.com/profile.php?id=100014103609313&#39;)'>
+<i class='fas fa-star'>
+</i>86</button>
+                </div>
+    </div><a href='https://www.instagram.com/_dtai67/' target='_blank' title='instagram/web__addict'><i class='fab fa-instagram'></i></a>
+    <div class='navbar no-items section' id='navbar'></div>
+
+
+</body>
+
+</html>

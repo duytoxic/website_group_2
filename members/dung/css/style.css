@@ -1,0 +1,480 @@
+/* resert css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+
+  src: url("font/fontawesome-webfont.eot?#iefix&v=4.0.1")
+      format("embedded-opentype"),
+    url("font/fontawesome-webfont.woff?v=4.0.1") format("woff"),
+    url("font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+body,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14pt;
+  line-height: 1.5em;
+  color: rgb(56 3 3);
+  -webkit-text-stroke: 0.1px;
+}
+
+.dark {
+  color: #aaa;
+}
+
+.dark h1 {
+  padding-top: 48px;
+  font-weight: lighter;
+}
+
+.dark h1,
+.dark h3 {
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  color: #666;
+  margin: 0 0 1em 0;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+i {
+  font-style: italic;
+}
+
+p,
+ul {
+  margin-bottom: 1em;
+}
+
+p {
+  text-align: justify;
+}
+
+.row p {
+  color: #d6d6d6;
+}
+
+header p {
+  display: block;
+  margin: 0;
+  padding: 0.25em 0 0.5em 0;
+}
+
+footer {
+  padding-top: 1.5em;
+}
+
+br.clear {
+  clear: both;
+}
+
+/* Buttons */
+
+.uocmo {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.uocmo :active {
+  transition: border-bottom-color 0.25s ease-in-out 0s;
+}
+
+.button {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  background: #3d3d3d;
+  padding: 0.85em 3em 0.85em 3em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+  background: #4f4f4f;
+}
+
+.dark .button {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px #fff;
+  color: #fff;
+}
+
+.dark .button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Feature */
+
+.featured {
+  text-align: center;
+}
+
+.featured p {
+  text-align: center;
+}
+
+.feature-icon {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5em;
+  margin-bottom: 2.75em;
+  cursor: default;
+}
+
+.feature-icon .fa {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  font-size: 4.5em;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 1px #666;
+  color: #666;
+  line-height: 2.1em;
+}
+
+.feature-icon:before {
+  content: "";
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.325em;
+  width: 0.65em;
+  height: 0.65em;
+  display: block;
+  border-radius: 100%;
+}
+
+.feature-icon:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.65em;
+  width: 1px;
+  height: 4.35em;
+  background: #666;
+  margin-left: -0.5px;
+}
+
+.dark .feature-icon .fa {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.dark .feature-icon:before {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dark .feature-icon:after {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* fa-icon */
+
+.fa:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.25em;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-clock-o:before {
+  content: "\f017";
+}
+.fa-bolt:before {
+  content: "\f0e7";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* header */
+
+#header {
+  position: relative;
+  margin: 0;
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 2em 0 14em 0;
+  text-align: center;
+  color: #fff;
+}
+
+img {
+  width: 380px;
+  margin: auto;
+}
+
+#header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("");
+}
+
+#header > header,
+#header > header p,
+#header > footer {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#header header {
+}
+
+#header header h1 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+  margin-bottom: 0;
+}
+
+#header header p {
+  margin-top: 1.25em;
+  font-weight: 100;
+  padding: 0;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+#header footer {
+  padding-top: 1.5em;
+}
+
+/* main */
+
+.main {
+  position: relative;
+  margin: 0;
+}
+.main > header {
+  background: #fff;
+  text-align: center;
+  padding: 5em 0 5em 0;
+  margin: 0;
+}
+
+.main > header h2 {
+  font-size: 2.25em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.main > header p {
+  margin: 2em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main > .content {
+  padding: 6em 0 6em 0;
+}
+
+.main > .content h3 {
+  font-size: 1.5em;
+}
+
+.main > .content.dark {
+  background: #433;
+}
+
+.main > .content.style1 {
+  background: url("") top right no-repeat, url("") bottom left no-repeat,
+    url("") bottom left no-repeat, url(""),
+    linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+}
+
+.main > .skill-bars {
+  background: url("") top right no-repeat, url("") bottom left no-repeat,
+    url(""), linear-gradient(45deg, #384955, #655361, #85505f);
+  margin: auto;
+}
+
+/* skill */
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: rgb(28 161 93);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 60%;
+}
+.bar .progress-line.c span {
+  width: 55%;
+}
+.bar .progress-line.css span {
+  width: 50%;
+}
+.bar .progress-line.microsoft-office span {
+  width: 40%;
+}
+.bar .progress-line.soft-skills span {
+  width: 45%;
+}
+.bar .progress-line.mysql span {
+  width: 50%;
+}
+.bar .progress-line.java span {
+  width: 20%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -37px;
+  right: 0;
+  font-weight: 500;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "60%";
+}
+.progress-line.c span::after {
+  content: "55%";
+}
+.progress-line.css span::after {
+  content: "50%";
+}
+.progress-line.progress-line.microsoft-office span::after {
+  content: "40%";
+}
+.progress-line.progress-line.soft-skills span::after {
+  content: "45%";
+}
+.progress-line.mysql span::after {
+  content: "50%";
+}
+.progress-line.java span::after {
+  content: "20%";
+}
+
+/* footer */
+
+#footer {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding: 4em 0 8em 0;
+  box-shadow: inset 0 1px 0 0 #e6e6e6;
+}
+
+#footer .copyright {
+  margin-top: 3em;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+#footer .copyright a {
+  color: inherit;
+}

@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#header {
+    height: 46px;
+    background-color:#000;
+   
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    
+    position: relative;
+
+}
+#nav > li >  a {
+    color: #fff;
+    text-transform: uppercase;
+
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    display: inline-block;
+    line-height: 46px;
+   
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+color: black;
+
+line-height: 38px;
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+    
+}
+#header .search-btn {
+    float: right;
+    padding: 11px 21px;
+    cursor: pointer;
+    
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+#header .search-icon{
+    color:#fff;
+    font-size: 20px;
+}
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+body {
+    font-family: tahoma;
+    font-size: 13px;
+    width: 1000px;
+    margin: 0px auto;
+      background: url(https://www.vippng.com/png/full/361-3612977_website-background-png-tech-background-image-for-website.png);  
+ }
+#main #left {
+    width: 350px;
+     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);;
+    float: left;
+    min-height: 890px;
+    
+ }
+ #main #left .avatar {
+     width: 285px;
+     min-height: 300px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding:20px 0;
+     
+ }
+ #main #left .menu h1 {
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+   font-family: 'Gentium Basic', serif;
+   color:#f17751;
+ }
+ #main #left .menu.ul{
+    margin: 0;
+    padding: 0;
+}
+#main #left .menu ul .TT {
+   
+       list-style: none;
+       color: #000;
+       line-height: 2.5;
+       text-align: center;
+       font-size: 16px;
+}
+#main #left .menu h2{
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    padding: 30px;
+    font-size:  25px; 
+    line-height: 15px;
+    width: 100%;
+
+}
+  
+ #main #right {
+    width: 650px;
+    background: #a1c4fd;
+    float: left ;
+    min-height: 890px;
+}
+
+#main #right ul h3 {
+    text-align: center;
+    height: 40px;
+    padding: 50px;
+    font-size: 25px;
+} 
+#main #right ul .ND {
+   
+    list-style: none;
+    color: #000;
+    line-height: 2;
+    text-align: justify;
+    font-size: 16px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#main #right ul .HV {
+    
+    color: #000;
+    line-height: 2;
+    text-align:justify;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 4px;
+}
+#main #right ul .KN {
+    
+    color: #000;
+    line-height: 2;
+    text-align:justify;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 4px;
+}
+#main #right ul .HĐ {
+    
+    line-height: 2;
+    color: #000;
+    font-size: 16px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 4px;
+
+}
+
+
+#footer {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    width: 1000px;
+    text-align: center;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    clear: left;
+}
+#footer .button {
+        margin-bottom: 0px;
+        background-color: white;
+        border: 0;
+        width: 50px;
+        padding: 18px 0 15px 0;
+        border-radius: 100px;
+        cursor: pointer;
+        height: 48px;
+        
+}
