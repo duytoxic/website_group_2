@@ -1,3 +1,63 @@
-
-
-/*# sourceMappingURL=style.css.map */
+:root {
+  --primary_color: #ff6666;
+  --second_color: #252525;
+  --third_color: #707070;
+}
+.color-primary {
+  color: var(--primary_color);
+}
+.team h6.name-team {
+  border-bottom: 3px solid var(--primary_color);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 14px;
+}
+.team h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--second_color);
+}
+.team .team-member .team-member_item img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+}
+.team-member_item .team-member_item-name{
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--second_color);
+    text-decoration: none;
+}
+.team-member_item .team-member_item-desc{
+    color: var(--third_color);
+    font-size: 16px;
+    line-height: 1.7;
+    word-break: break-word;
+    margin-top: 10px;
+    height: 85px;
+}
+.icon-social{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.icon-social li{
+    display: inline-block;
+    margin: 0 7px;
+}
+.icon-social li a {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    border: 2px solid var(--primary_color);
+}
+.icon-social li a i{
+    color: var(--primary_color);
+    font-size: 16px;
+}
